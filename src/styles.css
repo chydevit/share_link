@@ -28,10 +28,20 @@
   transition: all 0.2s ease;
 }
 
-body {
+/* body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background: hsl(243deg 41% 51%);
+  color: var(--text-color);
+  font-weight: 400;
+} */
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: linear-gradient(-45deg, #31718f, #6a11cb, #ff6f61, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
   color: var(--text-color);
   font-weight: 400;
 }
@@ -411,4 +421,16 @@ body::after {
 }
 .bio__image{
   border-radius: 50px;
+}
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
