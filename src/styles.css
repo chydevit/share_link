@@ -284,6 +284,12 @@ body::after {
   box-shadow: 0 0 350px 100px rgba(93, 248, 240, 1);
   animation: animate_3 10s infinite;
 }
+.telegram {
+  text-align: center;
+}
+.detel {
+  margin: 20px;
+}
 
 /* animate-1 */
 @keyframes animate_1 {
@@ -419,8 +425,13 @@ body::after {
     box-shadow: 0 0 350px 100px rgba(93, 248, 240, 1);
   }
 }
-.bio__image{
+.bio__image {
   border-radius: 50px;
+  display: block;
+  margin: auto;
+}
+.h2 {
+  text-align: center;
 }
 /* Gradient Animation */
 @keyframes gradientAnimation {
